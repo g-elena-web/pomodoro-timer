@@ -6,14 +6,14 @@ import './time-length.css';
 
 function TimeLength(props) {
 
-    const { type, length } = props;
+    const { type, length, state } = props;
 
     return (
-        <div className={"time-length " + {type}}>
-            <p className={type + "-label"}>{type}</p>
-            <div>
+        <div className={(state === 'on') ? "time-length time-length-active" : "time-length"}>
+            <p className="label">{type}</p>
+            <div className="set-length">
                 <Decrement {...props} />
-                <div className={type + "-length"}>{length}</div>
+                <div className="length ">{length}</div>
                 <Increment {...props} />
             </div>
         </div>

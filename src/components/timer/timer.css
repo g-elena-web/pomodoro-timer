@@ -12,7 +12,7 @@
     transition: 1s;
 }
 
-@media (any-hover: hover) {
+@media (hover: hover) {
 
     .timer:hover {
         z-index: 1;

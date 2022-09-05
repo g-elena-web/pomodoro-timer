@@ -12,9 +12,16 @@
     transition: 1s;
 }
 
-.timer:hover {
-    z-index: 1;
-    transform: scale(1.2);
+@media (any-hover: hover) {
+
+    .timer:hover {
+        z-index: 1;
+        transform: scale(1.2);
+    }
+
+    .timer button:hover {
+        color: var(--dark-blue);
+    }
 }
 
 .time-left {
@@ -26,10 +33,22 @@
     min-width: 1.5rem;
 }
 
-.timer button:hover {
+.timer button:active {
     color: var(--dark-blue);
 }
 
 .timer-active {
     background-color: var(--pink) !important;
+}
+
+@media (max-width: 400px) {
+    .timer {
+        margin-top: -45px;
+    }
+}
+
+@media (max-width: 300px) {
+    .timer {
+        margin-top: -32px;
+    }
 }

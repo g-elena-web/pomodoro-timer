@@ -13,9 +13,12 @@
     transition: 1s;
 }
 
-.time-length:hover {
-    z-index: 1;
-    transform: scale(1.2);
+@media (any-hover: hover) {
+    
+    .time-length:hover {
+        z-index: 1;
+        transform: scale(1.2);
+    }
 }
 
 .label {

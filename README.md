@@ -1,4 +1,4 @@
-![app screenshot](https://github.com/g-elena-web/pomodoro-timer/blob/master/src/resources/screenshot.jpg?raw=true)
+![app screenshot](https://github.com/g-elena-web/pomodoro-timer/blob/master/src/resources/screenshot.jpg)
 
 # About
 
